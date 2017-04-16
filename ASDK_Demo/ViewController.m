@@ -7,9 +7,12 @@
 //
 
 #import "ViewController.h"
-#import <AsyncDisplayKit.h>
+#import "NormalTableViewController.h"
+#import "NormalCollectionViewController.h"
+#import "ASDKTableViewController.h"
+#import "ASDKCollectionViewController.h"
 
-@interface ViewController ()
+@interface ViewController () 
 
 @end
 
@@ -17,15 +20,27 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-    
     
 }
 
+- (IBAction)showUITableView:(id)sender {
+    NormalTableViewController *tbVC = [[NormalTableViewController alloc] init];
+    [self.navigationController pushViewController:tbVC animated:YES];
+}
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)showASTableNode:(id)sender {
+    ASDKTableViewController *tbVC = [[ASDKTableViewController alloc] init];
+    [self.navigationController pushViewController:tbVC animated:YES];
+}
+
+- (IBAction)showUICollectionView:(id)sender {
+    NormalCollectionViewController *colVC = [[NormalCollectionViewController alloc] init];
+    [self.navigationController pushViewController:colVC animated:YES];
+}
+
+- (IBAction)showASCollectionNode:(id)sender {
+    ASDKCollectionViewController *colVC = [[ASDKCollectionViewController alloc] init];
+    [self.navigationController pushViewController:colVC animated:YES];
 }
 
 

@@ -15,6 +15,14 @@
 		8A9CE2271EA1247900EC5D24 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A9CE2251EA1247900EC5D24 /* LaunchScreen.storyboard */; };
 		8A9CE2321EA1247900EC5D24 /* ASDK_DemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A9CE2311EA1247900EC5D24 /* ASDK_DemoTests.m */; };
 		8A9CE23D1EA1247900EC5D24 /* ASDK_DemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A9CE23C1EA1247900EC5D24 /* ASDK_DemoUITests.m */; };
+		8A9CE2981EA3A22300EC5D24 /* NormalTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A9CE2971EA3A22300EC5D24 /* NormalTableViewController.m */; };
+		8A9CE29C1EA3A27100EC5D24 /* NormalCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A9CE29B1EA3A27100EC5D24 /* NormalCollectionViewController.m */; };
+		8A9CE29F1EA3A29700EC5D24 /* ASDKTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A9CE29E1EA3A29700EC5D24 /* ASDKTableViewController.m */; };
+		8A9CE2A21EA3A2A900EC5D24 /* ASDKCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A9CE2A11EA3A2A900EC5D24 /* ASDKCollectionViewController.m */; };
+		8A9CE2A61EA3A59200EC5D24 /* TableCellNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A9CE2A51EA3A59200EC5D24 /* TableCellNode.m */; };
+		8A9CE2AA1EA3A6BA00EC5D24 /* PhotoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A9CE2A91EA3A6BA00EC5D24 /* PhotoModel.m */; };
+		8A9CE2B41EA3C3BE00EC5D24 /* YYFPSLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A9CE2B11EA3C3BE00EC5D24 /* YYFPSLabel.m */; };
+		8A9CE2B51EA3C3BE00EC5D24 /* YYWeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A9CE2B31EA3C3BE00EC5D24 /* YYWeakProxy.m */; };
 		FBC146F80BCD8D050AEBBA28 /* libPods-ASDK_Demo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EE5929E7C0399A98AA85B586 /* libPods-ASDK_Demo.a */; };
 /* End PBXBuildFile section */
 
@@ -65,6 +73,22 @@
 		8A9CE2381EA1247900EC5D24 /* ASDK_DemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ASDK_DemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A9CE23C1EA1247900EC5D24 /* ASDK_DemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASDK_DemoUITests.m; sourceTree = "<group>"; };
 		8A9CE23E1EA1247900EC5D24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A9CE2961EA3A22300EC5D24 /* NormalTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NormalTableViewController.h; sourceTree = "<group>"; };
+		8A9CE2971EA3A22300EC5D24 /* NormalTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NormalTableViewController.m; sourceTree = "<group>"; };
+		8A9CE29A1EA3A27100EC5D24 /* NormalCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NormalCollectionViewController.h; sourceTree = "<group>"; };
+		8A9CE29B1EA3A27100EC5D24 /* NormalCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NormalCollectionViewController.m; sourceTree = "<group>"; };
+		8A9CE29D1EA3A29700EC5D24 /* ASDKTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASDKTableViewController.h; sourceTree = "<group>"; };
+		8A9CE29E1EA3A29700EC5D24 /* ASDKTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASDKTableViewController.m; sourceTree = "<group>"; };
+		8A9CE2A01EA3A2A900EC5D24 /* ASDKCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASDKCollectionViewController.h; sourceTree = "<group>"; };
+		8A9CE2A11EA3A2A900EC5D24 /* ASDKCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASDKCollectionViewController.m; sourceTree = "<group>"; };
+		8A9CE2A41EA3A59200EC5D24 /* TableCellNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableCellNode.h; sourceTree = "<group>"; };
+		8A9CE2A51EA3A59200EC5D24 /* TableCellNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableCellNode.m; sourceTree = "<group>"; };
+		8A9CE2A81EA3A6BA00EC5D24 /* PhotoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoModel.h; sourceTree = "<group>"; };
+		8A9CE2A91EA3A6BA00EC5D24 /* PhotoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoModel.m; sourceTree = "<group>"; };
+		8A9CE2B01EA3C3BE00EC5D24 /* YYFPSLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYFPSLabel.h; sourceTree = "<group>"; };
+		8A9CE2B11EA3C3BE00EC5D24 /* YYFPSLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYFPSLabel.m; sourceTree = "<group>"; };
+		8A9CE2B21EA3C3BE00EC5D24 /* YYWeakProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYWeakProxy.h; sourceTree = "<group>"; };
+		8A9CE2B31EA3C3BE00EC5D24 /* YYWeakProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYWeakProxy.m; sourceTree = "<group>"; };
 		9090F412C8F877B99728E681 /* Pods-ASDK_Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ASDK_Demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-ASDK_Demo/Pods-ASDK_Demo.release.xcconfig"; sourceTree = "<group>"; };
 		EE5929E7C0399A98AA85B586 /* libPods-ASDK_Demo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ASDK_Demo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBBDDEB07208572B7F6B3E5F /* Pods-ASDK_Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ASDK_Demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ASDK_Demo/Pods-ASDK_Demo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -134,6 +158,10 @@
 				8A9CE21B1EA1247900EC5D24 /* AppDelegate.m */,
 				8A9CE21D1EA1247900EC5D24 /* ViewController.h */,
 				8A9CE21E1EA1247900EC5D24 /* ViewController.m */,
+				8A9CE2951EA3A1BA00EC5D24 /* UIKit_VC */,
+				8A9CE2991EA3A24200EC5D24 /* ASDK_VC */,
+				8A9CE2A71EA3A66E00EC5D24 /* Models */,
+				8A9CE2AF1EA3C3BE00EC5D24 /* YYFPSLabel */,
 				8A9CE2171EA1247900EC5D24 /* Supporting Files */,
 			);
 			path = ASDK_Demo;
@@ -168,6 +196,58 @@
 			);
 			path = ASDK_DemoUITests;
 			sourceTree = "<group>";
+		};
+		8A9CE2951EA3A1BA00EC5D24 /* UIKit_VC */ = {
+			isa = PBXGroup;
+			children = (
+				8A9CE2961EA3A22300EC5D24 /* NormalTableViewController.h */,
+				8A9CE2971EA3A22300EC5D24 /* NormalTableViewController.m */,
+				8A9CE29A1EA3A27100EC5D24 /* NormalCollectionViewController.h */,
+				8A9CE29B1EA3A27100EC5D24 /* NormalCollectionViewController.m */,
+			);
+			name = UIKit_VC;
+			sourceTree = "<group>";
+		};
+		8A9CE2991EA3A24200EC5D24 /* ASDK_VC */ = {
+			isa = PBXGroup;
+			children = (
+				8A9CE29D1EA3A29700EC5D24 /* ASDKTableViewController.h */,
+				8A9CE29E1EA3A29700EC5D24 /* ASDKTableViewController.m */,
+				8A9CE2A01EA3A2A900EC5D24 /* ASDKCollectionViewController.h */,
+				8A9CE2A11EA3A2A900EC5D24 /* ASDKCollectionViewController.m */,
+				8A9CE2A31EA3A50A00EC5D24 /* Cells */,
+			);
+			name = ASDK_VC;
+			sourceTree = "<group>";
+		};
+		8A9CE2A31EA3A50A00EC5D24 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				8A9CE2A41EA3A59200EC5D24 /* TableCellNode.h */,
+				8A9CE2A51EA3A59200EC5D24 /* TableCellNode.m */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		8A9CE2A71EA3A66E00EC5D24 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8A9CE2A81EA3A6BA00EC5D24 /* PhotoModel.h */,
+				8A9CE2A91EA3A6BA00EC5D24 /* PhotoModel.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		8A9CE2AF1EA3C3BE00EC5D24 /* YYFPSLabel */ = {
+			isa = PBXGroup;
+			children = (
+				8A9CE2B01EA3C3BE00EC5D24 /* YYFPSLabel.h */,
+				8A9CE2B11EA3C3BE00EC5D24 /* YYFPSLabel.m */,
+				8A9CE2B21EA3C3BE00EC5D24 /* YYWeakProxy.h */,
+				8A9CE2B31EA3C3BE00EC5D24 /* YYWeakProxy.m */,
+			);
+			path = YYFPSLabel;
+			sourceTree = SOURCE_ROOT;
 		};
 		B3958497602C8FCA0A0FBF63 /* Frameworks */ = {
 			isa = PBXGroup;
@@ -363,9 +443,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A9CE2A61EA3A59200EC5D24 /* TableCellNode.m in Sources */,
+				8A9CE2A21EA3A2A900EC5D24 /* ASDKCollectionViewController.m in Sources */,
+				8A9CE2B51EA3C3BE00EC5D24 /* YYWeakProxy.m in Sources */,
+				8A9CE29F1EA3A29700EC5D24 /* ASDKTableViewController.m in Sources */,
 				8A9CE21F1EA1247900EC5D24 /* ViewController.m in Sources */,
 				8A9CE21C1EA1247900EC5D24 /* AppDelegate.m in Sources */,
+				8A9CE2981EA3A22300EC5D24 /* NormalTableViewController.m in Sources */,
+				8A9CE2B41EA3C3BE00EC5D24 /* YYFPSLabel.m in Sources */,
+				8A9CE29C1EA3A27100EC5D24 /* NormalCollectionViewController.m in Sources */,
 				8A9CE2191EA1247900EC5D24 /* main.m in Sources */,
+				8A9CE2AA1EA3A6BA00EC5D24 /* PhotoModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
