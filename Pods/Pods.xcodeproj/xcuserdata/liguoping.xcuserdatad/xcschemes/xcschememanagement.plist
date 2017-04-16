@@ -9,7 +9,22 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>AsyncDisplayKit.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>MJRefresh.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>PINCache.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>PINRemoteImage.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -27,12 +42,27 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>0E3D10774BDDD96DB1E650B1DFAF54F3</key>
+		<key>64B339E7E7D9892971D0DCFCDA162BDF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>688B33B13AECBA1AEE4CB22FCE83C378</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7F80D8539C508105C48AF62E35B629CD</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>9E033EDB5EC0819481B0546434FA577B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CEC40E32D7BC83150D80FBA769D0287E</key>
 		<dict>
 			<key>primary</key>
 			<true/>

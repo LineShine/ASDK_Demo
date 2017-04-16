@@ -15,6 +15,7 @@
 		8A9CE2271EA1247900EC5D24 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A9CE2251EA1247900EC5D24 /* LaunchScreen.storyboard */; };
 		8A9CE2321EA1247900EC5D24 /* ASDK_DemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A9CE2311EA1247900EC5D24 /* ASDK_DemoTests.m */; };
 		8A9CE23D1EA1247900EC5D24 /* ASDK_DemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A9CE23C1EA1247900EC5D24 /* ASDK_DemoUITests.m */; };
+		FBC146F80BCD8D050AEBBA28 /* libPods-ASDK_Demo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EE5929E7C0399A98AA85B586 /* libPods-ASDK_Demo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		8A9CE23C1EA1247900EC5D24 /* ASDK_DemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASDK_DemoUITests.m; sourceTree = "<group>"; };
 		8A9CE23E1EA1247900EC5D24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9090F412C8F877B99728E681 /* Pods-ASDK_Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ASDK_Demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-ASDK_Demo/Pods-ASDK_Demo.release.xcconfig"; sourceTree = "<group>"; };
+		EE5929E7C0399A98AA85B586 /* libPods-ASDK_Demo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ASDK_Demo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBBDDEB07208572B7F6B3E5F /* Pods-ASDK_Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ASDK_Demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ASDK_Demo/Pods-ASDK_Demo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -73,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBC146F80BCD8D050AEBBA28 /* libPods-ASDK_Demo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,6 +113,7 @@
 				8A9CE23B1EA1247900EC5D24 /* ASDK_DemoUITests */,
 				8A9CE2151EA1247900EC5D24 /* Products */,
 				0C7575D20C18A68C99322C1D /* Pods */,
+				B3958497602C8FCA0A0FBF63 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -163,6 +167,14 @@
 				8A9CE23E1EA1247900EC5D24 /* Info.plist */,
 			);
 			path = ASDK_DemoUITests;
+			sourceTree = "<group>";
+		};
+		B3958497602C8FCA0A0FBF63 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EE5929E7C0399A98AA85B586 /* libPods-ASDK_Demo.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

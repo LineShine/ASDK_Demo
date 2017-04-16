@@ -14,16 +14,39 @@ PODS:
   - AFNetworking/Serialization (3.1.0)
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
+  - AsyncDisplayKit (2.1):
+    - AsyncDisplayKit/PINRemoteImage (= 2.1)
+  - AsyncDisplayKit/Core (2.1)
+  - AsyncDisplayKit/PINRemoteImage (2.1):
+    - AsyncDisplayKit/Core
+    - PINRemoteImage/iOS (= 3.0.0-beta.7)
+    - PINRemoteImage/PINCache
   - MJRefresh (3.1.12)
+  - PINCache (3.0.1-beta.2):
+    - PINCache/Arc-exception-safe (= 3.0.1-beta.2)
+    - PINCache/Core (= 3.0.1-beta.2)
+  - PINCache/Arc-exception-safe (3.0.1-beta.2):
+    - PINCache/Core
+  - PINCache/Core (3.0.1-beta.2)
+  - PINRemoteImage/Core (3.0.0-beta.7)
+  - PINRemoteImage/iOS (3.0.0-beta.7):
+    - PINRemoteImage/Core
+  - PINRemoteImage/PINCache (3.0.0-beta.7):
+    - PINCache (= 3.0.1-beta.2)
+    - PINRemoteImage/Core
 
 DEPENDENCIES:
   - AFNetworking (~> 3.1.0)
+  - AsyncDisplayKit
   - MJRefresh (~> 3.1.12)
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  AsyncDisplayKit: 28de788f9d6ec573be7662f0fe8931e656357e93
   MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
+  PINCache: 6d273a6e0754bd26e3f12a38a90dde73cc6a42b2
+  PINRemoteImage: ff63baf185088530db6cfa41cb665e2b5126b5c3
 
-PODFILE CHECKSUM: d35f052bb60a432663032eb671f6408c6b8718e7
+PODFILE CHECKSUM: 097733ca9d968b00c01e9c34bd129013f12a332f
 
 COCOAPODS: 1.2.1
