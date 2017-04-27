@@ -10,4 +10,6 @@
 
 @interface NormalTableViewController : UIViewController
 
+@property (nonatomic, strong) NSArray *dataArray;
+
 @end

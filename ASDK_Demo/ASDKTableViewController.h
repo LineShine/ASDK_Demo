@@ -10,4 +10,6 @@
 
 @interface ASDKTableViewController : UIViewController
 
+@property (nonatomic, strong) NSArray *dataArray;
+
 @end

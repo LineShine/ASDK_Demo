@@ -328,7 +328,7 @@
 				TargetAttributes = {
 					8A9CE2131EA1247900EC5D24 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = JZ55F72NNP;
+						DevelopmentTeam = PD2K7DJQX8;
 						ProvisioningStyle = Automatic;
 					};
 					8A9CE22C1EA1247900EC5D24 = {
@@ -601,7 +601,7 @@
 			baseConfigurationReference = FBBDDEB07208572B7F6B3E5F /* Pods-ASDK_Demo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = JZ55F72NNP;
+				DEVELOPMENT_TEAM = PD2K7DJQX8;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = ASDK_Demo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -616,7 +616,7 @@
 			baseConfigurationReference = 9090F412C8F877B99728E681 /* Pods-ASDK_Demo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = JZ55F72NNP;
+				DEVELOPMENT_TEAM = PD2K7DJQX8;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = ASDK_Demo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
