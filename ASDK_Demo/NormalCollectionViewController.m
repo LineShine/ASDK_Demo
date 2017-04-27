@@ -8,7 +8,9 @@
 
 #import "NormalCollectionViewController.h"
 
-@interface NormalCollectionViewController ()
+@interface NormalCollectionViewController () <UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
+
+@property (nonatomic, strong) UICollectionView *collectionView;
 
 @end
 
@@ -17,17 +19,25 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self initViews];
+    self.title = @"UICollectionView";
     
-    [self loadData];
+    [self initViews];
 }
 
 - (void)initViews {
+    UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc] init];
     
+    self.collectionView = [[UICollectionView alloc] initWithFrame:self.view.bounds collectionViewLayout:flowLayout];
+    _collectionView.contentInset = UIEdgeInsetsMake(0, 0, 49, 0);
+    _collectionView.scrollIndicatorInsets = UIEdgeInsetsMake(0, 0, 49, 0);
+    _collectionView.alwaysBounceVertical = YES;
+    _collectionView.dataSource = self;
+    _collectionView.delegate = self;
+    //将UICollectionViewCell类的单元格 加上 cell_identy复用标记
+//    [_collectionView registerClass:[FoundCollectionViewCell class] forCellWithReuseIdentifier:@"collectID"];
+    
+    [self.view addSubview:_collectionView];
 }
 
-- (void)loadData {
-    
-}
 
 @end

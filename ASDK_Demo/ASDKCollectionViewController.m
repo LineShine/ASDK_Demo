@@ -19,17 +19,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self initViews];
+    self.title = @"ASDKCollectionView";
     
-    [self loadData];
+    [self initViews];
 }
 
 - (void)initViews {
     
 }
 
-- (void)loadData {
-    
-}
 
 @end

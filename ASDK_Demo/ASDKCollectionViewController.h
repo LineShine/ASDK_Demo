@@ -10,4 +10,6 @@
 
 @interface ASDKCollectionViewController : ASViewController
 
+@property (nonatomic, strong) NSArray *dataArray;
+
 @end

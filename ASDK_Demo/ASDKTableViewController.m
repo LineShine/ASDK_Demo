@@ -16,7 +16,6 @@
 @interface ASDKTableViewController () <ASTableDelegate, ASTableDataSource>
 
 @property (nonatomic, strong) ASTableNode *tableNode;
-@property (nonatomic, strong) NSMutableArray *dataArray;
 
 @end
 
@@ -25,9 +24,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self initViews];
+    self.title = @"ASTableNode";
     
-    [self loadData];
+    [self initViews];
 }
 
 - (void)initViews {
@@ -46,13 +45,9 @@
     [self.view addSubview:fpsLabel];
 }
 
-- (void)loadData {
-//    self.dataArray = [NSMutableArray arrayWithArray:@[]];
-}
-
 #pragma mark - TableNode Delegate
 - (NSInteger)tableNode:(ASTableNode *)tableNode numberOfRowsInSection:(NSInteger)section {
-    return 100;//_dataArray.count;
+    return _dataArray.count;
 }
 
 /**
@@ -61,10 +56,9 @@
  */
 - (ASCellNodeBlock)tableNode:(ASTableNode *)tableNode nodeBlockForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-//    PhotoModel *model = _dataArray[indexPath.row];
     PhotoModel *model = [[PhotoModel alloc] init];
     model.text = [NSString stringWithFormat:@"Row : %ld", indexPath.row];
-    model.imgUrl = @"http://mpic.tiankong.com/692/bfb/692bfb30084b9804754759ca8c047739/640.jpg";
+    model.imgUrl = _dataArray[indexPath.row];
     
     ASCellNode *(^cellBlock)() = ^ASCellNode *() {
         
@@ -104,7 +98,7 @@
 - (ASSizeRange)tableNode:(ASTableNode *)tableNode constrainedSizeForRowAtIndexPath:(NSIndexPath *)indexPath {
     
     CGFloat width = [UIScreen mainScreen].bounds.size.width;
-    CGSize min = CGSizeMake(width, 220);
+    CGSize min = CGSizeMake(width, 380);
     CGSize max = CGSizeMake(width, CGFLOAT_MAX);
     return ASSizeRangeMake(min, max);
 }
