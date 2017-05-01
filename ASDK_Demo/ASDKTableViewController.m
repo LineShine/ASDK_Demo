@@ -63,6 +63,7 @@
     model.text = [NSString stringWithFormat:@"Row : %ld", indexPath.row];
     model.imgUrl = _dataArray[indexPath.row];
     
+    // this may be executed on a background thread - it is important to make sure it is thread safe
     ASCellNode *(^cellBlock)() = ^ASCellNode *() {
         
         TableCellNode *cellNode = [[TableCellNode alloc] initWithData:model];

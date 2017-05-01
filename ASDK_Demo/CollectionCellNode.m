@@ -42,7 +42,10 @@
         NSMutableParagraphStyle * paragraphStyle = [[NSMutableParagraphStyle alloc] init];
         paragraphStyle.alignment = NSTextAlignmentCenter;
         
-        labelNode.attributedText = [[NSAttributedString alloc] initWithString:model.text attributes:@{NSFontAttributeName: [UIFont systemFontOfSize:18], NSForegroundColorAttributeName:[UIColor blackColor], NSBackgroundColorAttributeName : [UIColor clearColor], NSParagraphStyleAttributeName:paragraphStyle}];
+        labelNode.attributedText = [[NSAttributedString alloc] initWithString:model.text attributes:@{NSFontAttributeName: [UIFont systemFontOfSize:18],
+                                                                                                      NSForegroundColorAttributeName:[UIColor blackColor],
+                                                                                                      NSBackgroundColorAttributeName : [UIColor clearColor],
+                                                                                                      NSParagraphStyleAttributeName:paragraphStyle}];
         [self addSubnode:labelNode];
         self.labelNode = labelNode;
         
@@ -51,7 +54,7 @@
 }
 
 #pragma mark - 布局
-- (ASLayoutSpec *)layoutSpecThatFits:(ASSizeRange)constrainedSize{
+- (ASLayoutSpec *)layoutSpecThatFits:(ASSizeRange)constrainedSize {
     //
     ASInsetLayoutSpec *bgInset = [ASInsetLayoutSpec insetLayoutSpecWithInsets:UIEdgeInsetsZero child:_bgViewNode];
     //
