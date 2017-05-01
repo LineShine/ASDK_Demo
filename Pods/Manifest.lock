@@ -40,7 +40,7 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking (~> 3.1.0)
-  - AsyncDisplayKit
+  - AsyncDisplayKit (~> 2.1)
   - MJRefresh (~> 3.1.12)
   - SDWebImage (~> 4.0.0)
 
@@ -52,6 +52,6 @@ SPEC CHECKSUMS:
   PINRemoteImage: ff63baf185088530db6cfa41cb665e2b5126b5c3
   SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
 
-PODFILE CHECKSUM: 4192e879536c5c18c1907b22f2e8b9e49ca57915
+PODFILE CHECKSUM: 412671f5721e2481639f6b2d2f04c85168e8905c
 
 COCOAPODS: 1.2.1

@@ -23,6 +23,9 @@
 		8A9CE2AA1EA3A6BA00EC5D24 /* PhotoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A9CE2A91EA3A6BA00EC5D24 /* PhotoModel.m */; };
 		8A9CE2B41EA3C3BE00EC5D24 /* YYFPSLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A9CE2B11EA3C3BE00EC5D24 /* YYFPSLabel.m */; };
 		8A9CE2B51EA3C3BE00EC5D24 /* YYWeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A9CE2B31EA3C3BE00EC5D24 /* YYWeakProxy.m */; };
+		8A9CE2D51EB5CDDA00EC5D24 /* NormalCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A9CE2D31EB5CDDA00EC5D24 /* NormalCollectionViewCell.m */; };
+		8A9CE2D61EB5CDDA00EC5D24 /* NormalCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A9CE2D41EB5CDDA00EC5D24 /* NormalCollectionViewCell.xib */; };
+		8A9CE2D91EB61C1500EC5D24 /* CollectionCellNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A9CE2D81EB61C1500EC5D24 /* CollectionCellNode.m */; };
 		FBC146F80BCD8D050AEBBA28 /* libPods-ASDK_Demo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EE5929E7C0399A98AA85B586 /* libPods-ASDK_Demo.a */; };
 /* End PBXBuildFile section */
 
@@ -89,6 +92,11 @@
 		8A9CE2B11EA3C3BE00EC5D24 /* YYFPSLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYFPSLabel.m; sourceTree = "<group>"; };
 		8A9CE2B21EA3C3BE00EC5D24 /* YYWeakProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYWeakProxy.h; sourceTree = "<group>"; };
 		8A9CE2B31EA3C3BE00EC5D24 /* YYWeakProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYWeakProxy.m; sourceTree = "<group>"; };
+		8A9CE2D21EB5CDDA00EC5D24 /* NormalCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NormalCollectionViewCell.h; sourceTree = "<group>"; };
+		8A9CE2D31EB5CDDA00EC5D24 /* NormalCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NormalCollectionViewCell.m; sourceTree = "<group>"; };
+		8A9CE2D41EB5CDDA00EC5D24 /* NormalCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NormalCollectionViewCell.xib; sourceTree = "<group>"; };
+		8A9CE2D71EB61C1500EC5D24 /* CollectionCellNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionCellNode.h; sourceTree = "<group>"; };
+		8A9CE2D81EB61C1500EC5D24 /* CollectionCellNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionCellNode.m; sourceTree = "<group>"; };
 		9090F412C8F877B99728E681 /* Pods-ASDK_Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ASDK_Demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-ASDK_Demo/Pods-ASDK_Demo.release.xcconfig"; sourceTree = "<group>"; };
 		EE5929E7C0399A98AA85B586 /* libPods-ASDK_Demo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ASDK_Demo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBBDDEB07208572B7F6B3E5F /* Pods-ASDK_Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ASDK_Demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ASDK_Demo/Pods-ASDK_Demo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -225,6 +233,11 @@
 			children = (
 				8A9CE2A41EA3A59200EC5D24 /* TableCellNode.h */,
 				8A9CE2A51EA3A59200EC5D24 /* TableCellNode.m */,
+				8A9CE2D21EB5CDDA00EC5D24 /* NormalCollectionViewCell.h */,
+				8A9CE2D31EB5CDDA00EC5D24 /* NormalCollectionViewCell.m */,
+				8A9CE2D41EB5CDDA00EC5D24 /* NormalCollectionViewCell.xib */,
+				8A9CE2D71EB61C1500EC5D24 /* CollectionCellNode.h */,
+				8A9CE2D81EB61C1500EC5D24 /* CollectionCellNode.m */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -328,7 +341,7 @@
 				TargetAttributes = {
 					8A9CE2131EA1247900EC5D24 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = PD2K7DJQX8;
+						DevelopmentTeam = JZ55F72NNP;
 						ProvisioningStyle = Automatic;
 					};
 					8A9CE22C1EA1247900EC5D24 = {
@@ -371,6 +384,7 @@
 				8A9CE2271EA1247900EC5D24 /* LaunchScreen.storyboard in Resources */,
 				8A9CE2241EA1247900EC5D24 /* Assets.xcassets in Resources */,
 				8A9CE2221EA1247900EC5D24 /* Main.storyboard in Resources */,
+				8A9CE2D61EB5CDDA00EC5D24 /* NormalCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -444,10 +458,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				8A9CE2A61EA3A59200EC5D24 /* TableCellNode.m in Sources */,
+				8A9CE2D51EB5CDDA00EC5D24 /* NormalCollectionViewCell.m in Sources */,
 				8A9CE2A21EA3A2A900EC5D24 /* ASDKCollectionViewController.m in Sources */,
 				8A9CE2B51EA3C3BE00EC5D24 /* YYWeakProxy.m in Sources */,
 				8A9CE29F1EA3A29700EC5D24 /* ASDKTableViewController.m in Sources */,
 				8A9CE21F1EA1247900EC5D24 /* ViewController.m in Sources */,
+				8A9CE2D91EB61C1500EC5D24 /* CollectionCellNode.m in Sources */,
 				8A9CE21C1EA1247900EC5D24 /* AppDelegate.m in Sources */,
 				8A9CE2981EA3A22300EC5D24 /* NormalTableViewController.m in Sources */,
 				8A9CE2B41EA3C3BE00EC5D24 /* YYFPSLabel.m in Sources */,
@@ -601,7 +617,7 @@
 			baseConfigurationReference = FBBDDEB07208572B7F6B3E5F /* Pods-ASDK_Demo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = PD2K7DJQX8;
+				DEVELOPMENT_TEAM = JZ55F72NNP;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = ASDK_Demo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -616,7 +632,7 @@
 			baseConfigurationReference = 9090F412C8F877B99728E681 /* Pods-ASDK_Demo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = PD2K7DJQX8;
+				DEVELOPMENT_TEAM = JZ55F72NNP;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = ASDK_Demo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;

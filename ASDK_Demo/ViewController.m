@@ -14,7 +14,7 @@
 
 @interface ViewController () 
 
-@property (nonatomic, strong) NSArray *dataArray;
+@property (nonatomic, strong) NSMutableArray *dataArray;
 
 @end
 
@@ -23,8 +23,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    //美女图
-    self.dataArray = @[@"http://oneshow.img.nagezan.net/7f5e12dc-eaf2-4125-98cb-feafb7ba36ba.jpg",
+    
+    self.dataArray = [NSMutableArray arrayWithArray:
+                      @[@"http://oneshow.img.nagezan.net/7f5e12dc-eaf2-4125-98cb-feafb7ba36ba.jpg",
                        @"http://oneshow.img.nagezan.net/78173537-9a7e-45d2-b61b-73cf1ba75723.png",
                        @"http://oneshow.img.nagezan.net/dd49ca2e-5007-40a0-8a29-9693620c8a50.jpg",
                        @"http://oneshow.img.nagezan.net/8a3d235a-d565-49ef-9b4d-5ecc60acb06d.jpg",
@@ -121,7 +122,18 @@
                        @"http://oneshow.img.nagezan.net/9a6b18b9-b01d-4647-bc2a-2217c6ec92c9.jpg",
                        @"http://oneshow.img.nagezan.net/2dc8a8d9-dc00-425d-a94b-7575c12303ed.png",
                        @"http://oneshow.img.nagezan.net/21d11622-0651-4c24-a4df-9d3e2a7fe38f.jpg"
-                       ];
+                       ]];
+     
+    /*
+    self.dataArray = [NSMutableArray arrayWithArray:
+                      @[@"http://oneshow.img.nagezan.net/7f5e12dc-eaf2-4125-98cb-feafb7ba36ba.jpg",
+                        @"http://oneshow.img.nagezan.net/78173537-9a7e-45d2-b61b-73cf1ba75723.png",
+                        @"http://oneshow.img.nagezan.net/dd49ca2e-5007-40a0-8a29-9693620c8a50.jpg",
+                        @"http://oneshow.img.nagezan.net/8a3d235a-d565-49ef-9b4d-5ecc60acb06d.jpg",
+                        @"http://oneshow.img.nagezan.net/a29b9174-aab1-4fa6-a3a8-dfca24a5d3df.png",
+                        @"http://oneshow.img.nagezan.net/782a436c-0a9a-4069-9da6-68883ceab02f.jpg",
+                        @"http://oneshow.img.nagezan.net/03cc3ac2-3be1-4b9f-a799-003b3dc5926a.png"]];
+     */
 }
 
 - (IBAction)showUITableView:(id)sender {

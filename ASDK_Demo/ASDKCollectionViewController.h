@@ -8,8 +8,8 @@
 
 #import <AsyncDisplayKit/AsyncDisplayKit.h>
 
-@interface ASDKCollectionViewController : ASViewController
+@interface ASDKCollectionViewController : UIViewController
 
-@property (nonatomic, strong) NSArray *dataArray;
+@property (nonatomic, strong) NSMutableArray *dataArray;
 
 @end

@@ -39,6 +39,9 @@
     //ASTableNode 不会暴露所有UITableView的的属性，所以你必须通过 tableNode 底层的 UITableView 实例去设置 UITableView 的特殊属性。
     _tableNode.view.separatorStyle = UITableViewCellSeparatorStyleNone;
     
+    //无限滚动需要
+    //将 leadingScreensForBatching 设置为 1.0 表示当用户滚动还剩 1 个全屏就到达页尾时，开始抓取新的一批数据。
+    self.tableNode.view.leadingScreensForBatching = 1.0;  // default of 2.0
     
     YYFPSLabel *fpsLabel = [YYFPSLabel new];
     fpsLabel.frame = CGRectMake(200, 200, 50, 30);
@@ -62,11 +65,11 @@
     
     ASCellNode *(^cellBlock)() = ^ASCellNode *() {
         
-        TableCellNode *cellNodel = [[TableCellNode alloc] initWithData:model];
+        TableCellNode *cellNode = [[TableCellNode alloc] initWithData:model];
         
 //        NSIndexPath *currentIdxPath = [tableNode indexPathForNode:cellNodel];
         
-        return cellNodel;
+        return cellNode;
     };
     
     return cellBlock;
@@ -109,4 +112,44 @@
     
 }
 
+/*
+#pragma mark - 无限滚动
+- (BOOL)shouldBatchFetchForTableNode:(ASTableNode *)tableNode {
+    return YES;
+}
+
+- (void)tableNode:(ASTableNode *)tableNode willBeginBatchFetchWithContext:(ASBatchContext *)context {
+    //1
+    [self retrieveNextPageWithCompletion:^(NSArray *moreData) {
+        //2
+        [self insertNewRowsInTableNode:moreData];
+        //3 Let the context object know that a batch fetch was completed.
+        [context completeBatchFetching:YES];
+    }];
+}
+
+//官方文档写法
+- (void)retrieveNextPageWithCompletion:(void (^)(NSArray *))block {
+    //网络请求下一页数据
+    NSArray *moreData = _dataArray;
+    
+    // Important: this block must run on the main thread
+    dispatch_async(dispatch_get_main_queue(), ^{
+        block(moreData);
+    });
+}
+- (void)insertNewRowsInTableNode:(NSArray *)newData {
+    NSInteger section = 0;
+    NSMutableArray *indexPaths = [NSMutableArray array];
+    
+    NSUInteger newTotalNumberOfPhotos = self.dataArray.count + newData.count;
+    for (NSUInteger row = self.dataArray.count; row < newTotalNumberOfPhotos; row++) {
+        NSIndexPath *path = [NSIndexPath indexPathForRow:row inSection:section];
+        [indexPaths addObject:path];
+    }
+    
+    [self.dataArray addObjectsFromArray:newData];
+    [self.tableNode insertRowsAtIndexPaths:indexPaths withRowAnimation:UITableViewRowAnimationNone];
+}
+*/
 @end

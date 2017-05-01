@@ -5,6 +5,6 @@ target 'ASDK_Demo' do
 pod 'MJRefresh', '~> 3.1.12'
 pod 'SDWebImage', '~> 4.0.0'
 pod 'AFNetworking', '~> 3.1.0'
-pod 'AsyncDisplayKit'
+pod 'AsyncDisplayKit', '~> 2.1'
 
 end

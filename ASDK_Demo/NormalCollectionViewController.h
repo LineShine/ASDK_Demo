@@ -10,6 +10,6 @@
 
 @interface NormalCollectionViewController : UIViewController
 
-@property (nonatomic, strong) NSArray *dataArray;
+@property (nonatomic, strong) NSMutableArray *dataArray;
 
 @end

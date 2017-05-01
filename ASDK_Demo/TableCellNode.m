@@ -25,7 +25,7 @@
         bgViewNode.frame = CGRectMake(0, 0, 375, 360);
         bgViewNode.backgroundColor = [UIColor redColor];
         [self addSubnode:bgViewNode];
-        
+    
         ASNetworkImageNode *imgViewNode = [[ASNetworkImageNode alloc] init];
         imgViewNode.frame = CGRectMake(10, 10, 355, 340);
         imgViewNode.backgroundColor = [UIColor greenColor];
