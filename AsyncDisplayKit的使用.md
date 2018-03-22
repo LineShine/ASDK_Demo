@@ -1,4 +1,4 @@
-﻿###AsyncDisplayKit的使用
+###AsyncDisplayKit的使用
 
 ------
 #一、简介
@@ -254,7 +254,7 @@ labelNode.attributedText = [[NSAttributedString alloc] initWithString:@"居中�
 > 5.`children`: 包含的视图。数组内元素顺序同样代表着布局时排列的顺序
 
 # 四、优缺点
-> - 导入的ASDK库有30+M
+> - 需要自己造轮子
 > - 不支持大家常用的storyboard、xib、autoLayout，影响开发效率
 > - 代码没有UIKit使用熟练
 > - 网上资源少
